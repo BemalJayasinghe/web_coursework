@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 100, 0, 0.8); /* Slightly transparent to see the background image */
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    height: 50px; /* Adjust this value based on the actual height of the navigation bar */
+}
+
+header h1 {
+    text-align:left;
+    margin: 0;
+}
+
+.customization {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.customization label, .customization input, .customization select {
+    margin: 0 0.5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.thumbnail {
+    width: 300px; /* Increase the width */
+    height: 200px; /* Increase the height */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid #006400;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail img {
+    display: none;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.extended-view {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.extended-content {
+    display: flex;
+    align-items: center;
+}
+
+.extended-content img {
+    max-width: 60%;
+    max-height: 70vh;
+    margin-right: 1rem;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#extended-description {
+    font-size: 1rem;
+    flex: 1;
+}
