@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="sitemap.css">
+</head>
+<body>
+    <header>
+        <h1>Life on Land</h1>
+        <nav class="navigation">
+            <ul>
+                <li class="active"><a href="home.html">HOME</a></li>
+                <li><a href="user.html">USER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="sitemap.html">SITEMAP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sitemap-container">
+    <svg id="sitemap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+      <!-- Links -->
+      <line x1="400" y1="100" x2="400" y2="150" class="link"></line>
+      <line x1="200" y1="200" x2="200" y2="150" class="link"></line>
+      <line x1="370" y1="150" x2="370" y2="200" class="link"></line>
+      <line x1="500" y1="200" x2="500" y2="150" class="link"></line>
+      <line x1="650" y1="150" x2="650" y2="200" class="link"></line>
+      <line x1="651" y1="150" x2="199" y2="150" class="link"></line>
+      
+
+      <!-- Nodes -->
+      <!-- Main Node -->
+      <a href="sitemap.html">
+        <rect x="350" y="70" width="100" height="40" class="node" tabindex="0" aria-label="Sitemap"></rect>
+        <text x="400" y="95" text-anchor="middle" fill="#fff">Sitemap</text>
+      </a>
+
+      <!-- Child Nodes -->
+      <a href="home.html">
+        <rect x="150" y="200" width="100" height="40" class="node" tabindex="0" aria-label="Home Page"></rect>
+        <text x="200" y="225" text-anchor="middle" fill="#fff">Home</text>
+      </a>
+      <a href="user.html">
+        <rect x="320" y="200" width="100" height="40" class="node" tabindex="0" aria-label="User Page"></rect>
+        <text x="370" y="225" text-anchor="middle" fill="#fff">User</text>
+      </a>
+      <a href="gallery.html">
+        <rect x="450" y="200" width="100" height="40" class="node" tabindex="0" aria-label="Gallery Page"></rect>
+        <text x="500" y="225" text-anchor="middle" fill="#fff">Gallery</text>
+      </a>
+      <a href="team.html">
+        <rect x="600" y="200" width="100" height="40" class="node" tabindex="0" aria-label="Team Page"></rect>
+        <text x="650" y="225" text-anchor="middle" fill="#fff">Team</text>
+      </a>
+    </svg>
+  </div>
+  <script>
+    document.querySelectorAll('.node').forEach(node => {
+      node.addEventListener('focus', () => {
+        node.setAttribute('fill', '#e67e22'); /* Change fill color on focus */
+      });
+      node.addEventListener('blur', () => {
+        node.setAttribute('fill', '#3498db'); /* Restore fill color on blur */
+      });
+    });
+  </script>
+  
+</body>
+</html>
