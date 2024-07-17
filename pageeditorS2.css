@@ -1,0 +1,122 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.page-editor-container {
+    text-align: center;
+    background-color: #ffffffbd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Changed to absolute positioning */
+    top: 50%; /* Place at 50% from the top */
+    left: 50%; /* Place at 50% from the left */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    max-width: 800px; /* Adjust width as needed */
+    width: 90%; /* Ensure it doesn't overflow */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.profile p {
+    color: #131212;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.links h3 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #2d3938;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+}
