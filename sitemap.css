@@ -11,7 +11,8 @@ header {
   align-items: center;
 }
 body{
-  background:url(images/background.jpg);
+  background:url(background.JPG)no-repeat center center fixed;
+  background-size: cover;
 }
 header nav {
   height: 20px;
@@ -21,7 +22,7 @@ header h1 {
   text-align: left;
   margin: 0;
   font-size: 2em;
-  color: darkgreen;
+  color: white;
   user-select: none;
   padding-top: 10px;
 }
@@ -34,22 +35,22 @@ svg {
 .node {
   cursor: pointer;
   transition: fill 0.3s;
-  fill: #58b506; /* Default node color */
-  stroke: #2c3e50; /* Border color */
-  stroke-width: 2;
+  fill: #e3cd08; /* Default node color */
+  stroke: #8eb1d3; /* Border color */
+  stroke-width: 3;
 }
 .node:hover {
   fill: #e67e22; /* Hovered node color */
 }
 .link {
   fill: none;
-  stroke: #2c3e50; /* Link color */
+  stroke: #e2e8ee; /* Link color */
   stroke-width: 2px;
 }
 text {
   pointer-events: none; /* Prevent text from blocking node interactions */
   fill: black;
-  font-family: Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 14px;
 
 }
