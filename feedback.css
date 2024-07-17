@@ -1,5 +1,3 @@
-/* feedback.css */
-
 .feedback-container {
     margin: 100px auto;
     padding: 20px;
@@ -13,7 +11,7 @@
 .feedback-container h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: darkgreen;
+    color: #000000;
 }
 
 .feedback-container form {
@@ -31,16 +29,23 @@
 
 .feedback-container input[type="text"],
 .feedback-container input[type="email"],
-.feedback-container select,
+
 .feedback-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
-
+#rating{
+    position: relative;
+    width: 30rem;
+    top: 0;
+    margin-left: 1.5rem;
+    height: 2rem;
+    border-radius: 5px;
+}
 .feedback-container textarea {
     resize: vertical;
 }

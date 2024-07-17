@@ -1,5 +1,3 @@
-// feedback.js
-
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('previewBtn').addEventListener('click', function(event) {
         event.preventDefault();
@@ -13,9 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('feedback-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        // Perform final submission action (e.g., AJAX call to server)
-        alert('Form submitted successfully!');
-        // Reset form or redirect as needed
+        alert('Form submitted successfully!')
     });
 });
 
@@ -40,7 +36,7 @@ function hidePreview() {
 }
 
 function isValidEmail(email) {
-    // Basic email format check using regex
+
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
