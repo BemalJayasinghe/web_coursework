@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">LIFE ON LAND</h2>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">USER PROFILE</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li class="active"><a href="feedback">FEEDBACK</a></li>
+                <li><a href="#">SITEMAP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form action="#" method="post" id="feedback-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required> 
+                    <option value="">Select...</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" id="previewBtn">Preview</button>
+                <button type="button" id="editBtn" style="display: none;">Edit</button>
+                <button type="submit" id="submitBtn" style="display: none;">Submit Feedback</button>
+            </div>
+        </form>
+
+        <div id="previewSection" style="display: none;">
+            <h2>Preview</h2>
+            <p><strong>Name:</strong> <span id="previewName"></span></p>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Rating:</strong> <span id="previewRating"></span></p>
+            <p><strong>Comment:</strong> <span id="previewComment"></span></p>
+            <div class="form-group">
+                <button type="button" id="editPreviewBtn">Edit</button>
+                <button type="submit" id="finalSubmitBtn">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('previewBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            showPreview();
+        });
+
+        document.getElementById('editPreviewBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            hidePreview();
+        });
+
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Perform final submission action (e.g., AJAX call to server)
+            alert('Form submitted successfully!');
+            // Reset form or redirect as needed
+        });
+
+        function showPreview() {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var rating = document.getElementById('rating').value.trim();
+            var comment = document.getElementById('comment').value.trim();
+
+            document.getElementById('previewName').textContent = name;
+            document.getElementById('previewEmail').textContent = email;
+            document.getElementById('previewRating').textContent = rating;
+            document.getElementById('previewComment').textContent = comment;
+
+            document.getElementById('feedback-form').style.display = 'none';
+            document.getElementById('previewSection').style.display = 'block';
+        }
+
+        function hidePreview() {
+            document.getElementById('feedback-form').style.display = 'block';
+            document.getElementById('previewSection').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* feedback.css */
+
+.feedback-container {
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #7c7474e6;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkgreen;
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-container .form-group {
+    margin-bottom: 20px;
+}
+
+.feedback-container label {
+    font-weight: bold;
+}
+
+.feedback-container input[type="text"],
+.feedback-container input[type="email"],
+.feedback-container select,
+.feedback-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-container textarea {
+    resize: vertical;
+}
+
+.feedback-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-container button[type="submit"] {
+    width: 100%;
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.feedback-container button[type="submit"]:hover,
+.feedback-container button[type="button"]:hover {
+    background-color: #0a7d02;
+}
+
+#previewSection {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+#editPreviewBtn {
+    padding: 15px;
+    background: #0a7d02;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+#finalSubmitBtn {
+    padding: 15px;
+    background: #0a7d02;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+}
