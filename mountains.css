@@ -26,18 +26,8 @@ header {
     width: 100%;
     padding: 20px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-
-
-
-.logo {
-    font-size: 2em;
-    color: #cfcc34;
-    user-select: none;
-    left: auto;
 }
 
 .navigation ul {
