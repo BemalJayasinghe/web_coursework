@@ -2,7 +2,7 @@ body {
   font-family: "poppins";
   overflow-x: hidden;
   font-synthesis: 15px;
-  background-image: url("bg\ \(1\).png");
+  background-image: url("/images/bg\ \(1\).png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -362,7 +362,7 @@ a {
 }
 
 .checkoutBody {
-  background-image: url("bg2.png");
+  background-image: url("images/bg2.png");
 }
 
 
