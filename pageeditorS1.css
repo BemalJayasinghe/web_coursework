@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #fbfada;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #adbc9f;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #adbc9f;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #b0c4c4;
+}
+
+.tasks {
+  margin-bottom: 30px;
+}
+
+.tasks h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #adbc9f;
+}
+
+.task-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.task-card {
+  width: 80%;
+  max-width: 600px;
+  background-color: #436850;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  background-color: #adbc9f;
+  color: #12372a;
+}
+
+.task-background {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background-color: #adbc9f;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  z-index: 0;
+}
+
+.task-card:hover .task-background {
+  transform: scale(2);
+}
+
+.task-card h3 {
+  margin: 15px 0;
+  z-index: 1;
+  position: relative;
+  font-size: 1.8em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fbfada;
+}
+
+.task-card p {
+  margin-bottom: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.task-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.task-card ul li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.task-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #adbc9f;
+  color: #12372a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-card:hover .task-button {
+  background-color: #fbfada;
+  color: #12372a;
+  transform: translateY(-2px);
+}
+
+.task-card .task-button:hover {
+  background-color: #12372a;
+  color: #fbfada;
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
