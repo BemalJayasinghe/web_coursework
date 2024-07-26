@@ -2,7 +2,7 @@ body {
   font-family: "poppins";
   overflow-x: hidden;
   font-synthesis: 15px;
-  background-image: url("/images/shopBG.png");
+  background-image: url("images/shopBG.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
